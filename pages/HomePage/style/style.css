@@ -1,0 +1,212 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    scroll-behavior: smooth;
+    user-select: none;
+    list-style: none;
+    transition: 0.3s ease;
+}
+
+
+main {
+    padding: 36px 72px;
+}
+
+/* Selected Categories */
+
+.Categories, .Trending_Products {
+    width: 100%;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.Categories h2, .Trending_Products h2 {
+    text-align: center;
+}
+
+.Categories .cards {
+    margin-top: 20px;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 22px;
+}
+
+.cardCat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 280px;
+    height: auto;
+    gap: 6px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.Trending_Products .cards {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.cardTre {
+    cursor: pointer;
+    transition: all .3s ease;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+}
+
+.cardTre img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.Trending_Products .cards .card {
+    padding: 15px 15px 30px 15px;
+    background-color: #fff;
+    border-radius: 16px;
+    gap: 30px;
+}
+
+.Trending_Products .cards .card p {
+    text-align: left;
+    font-size: 24px;
+    padding: 0;
+    opacity: 1;
+    margin: 0;
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+}
+
+.card h2 {
+    text-align: left;
+    font-size: 20px;
+}
+
+.card p {
+    text-align: left;
+    font-size: 18px;
+    padding: 0;
+    opacity: 0.9;
+}
+
+.img {
+    width: 280px;
+    height: 280px;
+    border-radius: 16px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cardCat img {
+    transition: all .2s ease-in-out;
+
+}
+
+.cardCat:hover img {
+    box-shadow: 0 7px 7px #00000023;
+    transition: all .2s ease-in-out;
+}
+
+.cardTre:hover {
+    box-shadow: 7px 7px 7px #00000023,
+                inset 7px 7px 7px #00000023,
+                inset -7px -7px 7px #00000015,
+                7px 7px 7px #00000023;
+    transition: all .3s ease;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+#Smartphone_Acc {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* tailwind */
+.mb-5 {
+    margin-bottom: 2rem; /* Adjust as needed */
+}
+
+.md\:mb-card-section-bottom-padding {
+    margin-bottom: 3rem; /* Adjust as needed for medium devices */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: #444444; /* Change to your primary color */
+}
+
+.text-large {
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+h1 {
+    line-height: 1.2em; /* Ensure this matches your inline style */
+    margin-bottom: 1rem; /* Space below the heading */
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-weight: 500;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-align: center;
+    text-indent: 0px;
+    line-height: 48px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+}
+
+p {
+    font-size: 1.125rem; /* Adjust the font size for the paragraph */
+    color: #333333; /* Darker color for readability */
+    max-width: 900px; /* Limit width for better readability */
+    margin: 0 auto; /* Center align the paragraph */
+    padding: 0 1rem; /* Add padding for smaller screens */
+    font-weight: 300;
+}
+
+/* Add some hover effects on links or buttons if needed */
+a {
+    color: #000; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+
+/* Media  */
+
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 12px 12px;
+    }
+}

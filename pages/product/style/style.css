@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    scroll-behavior: smooth;
+    user-select: none;
+    list-style: none;
+    transition: 0.3s ease;
+}
+
+
+main {
+    padding: 36px 144px;
+}
+
+.footerTXT {
+    line-height: 1.2em; /* Ensure this matches your inline style */
+    margin-bottom: 0; /* Space below the heading */
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-align: center;
+    text-indent: 0px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    opacity: 0.8;
+}
+
+
+/* products */
+
+
+.select {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#fruits {
+    display: block;
+    width: 100%; 
+    appearance: none;
+    border-radius: 0.5rem; 
+    border: 1px solid #ccc;
+    background-color: transparent;
+    padding: 12px; 
+    font-size: 0.875rem; 
+    font-weight: 500; 
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+#fruits:focus {
+    outline: 2px solid #facc15;
+  }
+
+.select label {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    text-align: left;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0; /* Space below the heading */
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-align: left;
+    text-indent: 0px;
+    line-height: 28px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    color: #333333;
+}
+
+.image {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: green;
+    border-radius: 8px;
+}
+
+
+.wrapper {
+    display: flex;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.section-product {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 20px;
+}
+
+.title_product {
+    font-size: clamp(2rem, 4vw, 2.4rem);
+    text-align: left;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0; /* Space below the heading */
+    font-weight: 600;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-align: left;
+    text-indent: 0px;
+    line-height: 38px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    color: #333333;
+}
+
+.description_product {
+    font-size: clamp(0.6rem, 3.5vw, 0.9rem);
+    margin: 0;
+    padding: 0;
+}
+
+.price_product {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-weight: 700;
+    color: #333333;
+    font-size: 1.5rem;
+}
+
+
+.buy {
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: #444444;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+  }
+
+  .buy i {
+    font-size: 1.5rem;
+  }
+  
+  .buy:hover {
+    background-color: #444444; 
+    opacity: 0.8;
+  }
+
+
+/* tailwind */
+
+.mb-5 {
+    margin-bottom: 2rem; /* Adjust as needed */
+}
+
+.md\:mb-card-section-bottom-padding {
+    margin-bottom: 3rem; /* Adjust as needed for medium devices */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: #444444; /* Change to your primary color */
+}
+
+.text-large {
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+/* Add some hover effects on links or buttons if needed */
+a {
+    color: #000; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Media  */
+
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 12px 12px;
+    }
+}

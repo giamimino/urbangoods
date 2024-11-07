@@ -1,0 +1,51 @@
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.help a {
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    color: #000;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.help {
+    display: flex;
+    gap: 20px;
+}
+
+.help a:hover {
+    text-decoration: underline;
+}
+
+.line-helpXcopy {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    opacity: 0.1;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright p {
+    font-family: Montserrat, sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.copyright img {
+    width: 40px;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 8px;
+}

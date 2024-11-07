@@ -1,0 +1,193 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    scroll-behavior: smooth;
+    user-select: none;
+    list-style: none;
+    transition: 0.3s ease;
+}
+
+
+main {
+    padding: 36px 72px;
+}
+
+.title {
+    line-height: 1.2em; /* Ensure this matches your inline style */
+    margin-bottom: 0; /* Space below the heading */
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-weight: 500;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-align: center;
+    text-indent: 0px;
+    line-height: 48px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    color: #444444;
+}
+
+.footerTXT {
+    line-height: 1.2em; /* Ensure this matches your inline style */
+    margin-bottom: 0; /* Space below the heading */
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-align: center;
+    text-indent: 0px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    opacity: 0.8;
+}
+
+.input-desg {
+    display: block;
+    width: 100%; 
+    appearance: none;
+    border-radius: 0.5rem; 
+    border: 1px solid #ccc;
+    background-color: #fdfdfd;
+    padding: 12px; 
+    font-size: 0.875rem; 
+    font-weight: 500; 
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+  }
+
+.input-desg:focus {
+    outline: 2px solid #facc15;
+}
+
+.label-log {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #333333;
+    letter-spacing: 1px;
+}
+
+.submit {
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: #444444;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background-color: #444444; 
+    opacity: 0.8;
+  }
+
+/* tailwind */
+
+.px-5 {
+    padding-left: 18rem;
+    padding-right: 18rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 70px;
+}
+
+
+.text-xs {
+    font-size: .75rem;
+    line-height: 1rem;
+    opacity: 0.8;
+    display: flex;
+    gap: 10px;
+}
+
+.mb-5 {
+    margin-bottom: 1rem; /* Adjust as needed */
+}
+
+.md\:mb-card-section-bottom-padding {
+    margin-bottom: 0.5rem; /* Adjust as needed for medium devices */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: #444444; /* Change to your primary color */
+}
+
+.text-large {
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.125rem; /* Adjust the font size for the paragraph */
+    color: #333333; /* Darker color for readability */
+    max-width: 900px; /* Limit width for better readability */
+    margin: 0 auto; /* Center align the paragraph */
+    padding: 0 1rem; /* Add padding for smaller screens */
+    font-weight: 300;
+}
+
+/* Media  */
+
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 12px 12px;
+    }
+}
+    
+@media screen and (max-width: 1024px) {
+        .px-5 {
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .px-5 {
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .px-5 {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+    
+    @media screen and (max-width: 500px) {
+        .px-5 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }

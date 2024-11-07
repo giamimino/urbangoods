@@ -1,0 +1,299 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    scroll-behavior: smooth;
+    user-select: none;
+    list-style: none;
+    transition: 0.3s ease;
+}
+
+
+main {
+    padding: 70px;
+}
+
+.footerTXT {
+    line-height: 1.2em; /* Ensure this matches your inline style */
+    margin-bottom: 0; /* Space below the heading */
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: none solid rgb(68, 68, 68);
+    text-align: center;
+    text-indent: 0px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    opacity: 0.8;
+}
+
+
+/* cart */
+
+.cart_wrapper-ID3913139 {
+    font-size: 0.9rem;
+    display: flex;
+    gap: 40px;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+/* table */
+
+/* General Table Styling */
+table {
+    width: 100%;
+    border-collapse: separate; /* Set this on the table */
+    border-spacing: 0 20px; /* Vertical spacing between rows */
+}
+
+thead th {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #f1f1f1; /* Row separator */
+}
+
+tbody tr td:nth-child(2) {
+    font-family: 1rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+tbody tr:last-child {
+    border-bottom: none; /* Remove border for the last row */
+}
+
+/* Thumbnail Image */
+.table-image-thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.article {
+    display: flex;
+    gap: 20px;
+}
+
+/* Product Title */
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+.remove-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #1c64f2;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.remove-btn:hover {
+    text-decoration: underline;
+}
+
+.input-group {
+    display: flex;
+}
+
+.check-btn {
+    margin: 0;
+    padding: 6px 12px;
+    color: #333;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.check-btn:active {
+    opacity: 0.8;
+}
+
+.check-btn i {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Chrome, Safari, Edge */
+  margin: 0;
+}
+
+.quantity-input {
+    padding: 8px 4px;
+    width: auto;
+    appearance: none;
+    outline: none;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #f9fafb;
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.quantity-input:focus {
+    outline: 2px solid #facc15;
+  }
+
+/* checkOut wrapper */
+
+.checkout-wrapper {
+    background-color: #fff;
+    width: 350px;
+    border-radius: 16px;
+}
+
+.intro-chechout {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.intro-chechout h1 {
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.intro-chechout a {
+    text-align: center;
+    color: #1c64f2;
+}
+
+.chekput-agree-subtext  p{
+    white-space: pre-wrap;
+}
+
+.checkout-agree-wrapper {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.checkout-agree {
+    background-color: #111928;
+    padding: 10px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 0 0 #080c13;
+    border: 1px solid #111928;
+    width: 100%;
+    cursor: pointer;
+}
+
+.checkout-agree h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.checkout-agree p {
+    color: #fff;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 16px;
+}
+
+.price-shipping {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#country {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #f9fafb;
+    color: #555;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+#country:focus {
+    outline: 2px solid #facc15;
+  }
+
+#amount {
+    color: #6b7280;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.freeship {
+    padding: 20px;
+}
+
+.freeship p {
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    opacity: 0.8;
+    color: #555;
+}
+
+/* tailwind */
+
+.mb-5 {
+    margin-bottom: 2rem; /* Adjust as needed */
+}
+
+.md\:mb-card-section-bottom-padding {
+    margin-bottom: 3rem; /* Adjust as needed for medium devices */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: #444444; /* Change to your primary color */
+}
+
+.text-large {
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+/* Media  */
+
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 12px 12px;
+    }
+}
