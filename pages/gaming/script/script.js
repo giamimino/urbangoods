@@ -1,4 +1,3 @@
-let itemCount = 0;
 fetch('../../globalPHP/databaseGgear.php')
     .then(response => {
         if (!response.ok) {
@@ -37,12 +36,6 @@ fetch('../../globalPHP/databaseGgear.php')
                 priceProduct.textContent = "$" + json.price;
                 productWrapper.appendChild(priceProduct);
             }
-            if (json.isCart === "1") {
-                itemCount++;
-            }
         });
-        document.querySelector('.quantiti-item-cart').textContent = itemCount;
     })
     .catch(error => console.error('Error:', error));
-    document.querySelector('.quantiti-item-cart').textContent = itemCount;
-    

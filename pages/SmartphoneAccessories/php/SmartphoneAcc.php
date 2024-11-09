@@ -40,3 +40,27 @@ echo '<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="st
 
 <?php include("../script/script.js"); ?>
     </script>
+
+<script>
+    // Declare itemCount here
+    let itemCount = 0;
+
+    fetch('../../globalPHP/db-header.php')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok: ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(jsons => {
+            jsons.forEach(json => {
+                console.log(json); 
+                if (json.isCart === "1") {
+                    itemCount++;
+                }
+            });
+
+            document.querySelector('.quantiti-item-cart').innerText = itemCount; // Update the UI
+        })
+        .catch(error => console.error('Error:', error));
+</script>
